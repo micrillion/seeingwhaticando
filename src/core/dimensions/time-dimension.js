@@ -141,7 +141,7 @@ export function updateTimeDimensionCosts() {
 class TimeDimensionState extends DimensionState {
   constructor(tier) {
     super(() => player.dimensions.time, tier);
-    const BASE_COSTS = [null, DC.D1, DC.D5, DC.E2, DC.E3, DC.E2350, DC.E2650, DC.E3000, DC.E3350];
+    const BASE_COSTS = [null, DC.D1, DC.D5, DC.E2, DC.E3, DC.E2200, DC.E2500, DC.E2900, DC.E3250];
     this._baseCost = BASE_COSTS[tier];
     const COST_MULTS = [null, 3, 9, 27, 81, 24300, 72900, 218700, 656100];
     this._costMultiplier = COST_MULTS[tier];
